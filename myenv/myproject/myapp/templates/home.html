@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8">
+
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      html{
+        scroll-behavior: smooth;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+      .b25{
+        background: #252525;
+      }
+      .b1{
+        background: #1b1b1b;
+      }
+      .outlineNone{
+        outline: none !important;
+        border:none;
+
+      }
+      .a:hover img{
+        transition: 0.3s ease-in-out;
+          transform: scale(1.05,1.05);
+          border: 1px solid #1b1b1b !important;
+      }
+      .aBord-none:hover img{
+        transition: 0.3s ease-in-out;
+          transform: scale(1.05,1.05);
+
+      }
+      .gotopbtn{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 4.5%;
+        right: 5%;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        z-index: 15
+      }
+    </style>
+    <title>VP STORE</title>
+  </head>
+
+
+
+
+
+
+
+
+
+  <body id="body-start">
+<!-- header -->
+    <div class="container-fluid">
+      <div class="row align-items-center p-2 b25 text-light">
+          <div class="col-md-3  d-none d-md-block h6"> (+91) 000-00-00-00</div>
+          <div class="col-md-3  d-none d-md-block h5 text-center"> Welcome to VP store</div>
+          <div class="col-6 col-md-2  d-block">
+              <select class="custom-select bg-dark text-white" style="border: none;">
+                <option selected>RUPEE</option>
+                <option value="1">USD</option>
+              </select>
+          </div>
+          <div class=" col-6 col-md-2 d-block">
+               <select class="custom-select bg-dark text-white" style="border: none;">
+                  <option selected>ENGLISH</option>
+                  <option value="1">MALAYALAM</option>
+              </select>
+          </div>
+          <div class="col-md-2 col-lg-2 d-none d-md-block  ">
+           <button type="button" class="btn btn-outline-dark b25 text-white float-right">
+                Wishlist <span class="badge badge-light">0</span>
+           </button>
+          </div>
+
+      </div>
+
+    <div class="row b1  align-items-center p-1  text-light">
+      <div class="col-6 col-md-2 ">
+        <a href="#" class="link ml-1"><img src="https://icons-for-free.com/iconfiles/png/512/diamond-131979105288827632.png" alt="" loading="lazy" width="40" height="40"></a>
+      </div>
+      <div class="col-md-8  d-none d-md-block ">
+        <form class="form-inline float-right mr-3">
+        <input  class="form-control mr-sm-2 bg-dark border-dark text-danger btn-outline-dark" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn b1  btn-outline-dark my-2 my-sm-0  text-white" type="submit">Search</button>
+      </form>
+      </div>
+      <div class="col-6 col-md-2 pr-3 ">
+         <div class="dropdown float-right ">
+          <button class="btn b1 text-white dropdown-toggle  btn-outline-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            My account
+          </button>
+          <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal">Login</a>
+            <a class="dropdown-item" href="#"   data-toggle="modal" data-target="#staticBackdrop">Register</a>
+            <a class="dropdown-item" href="#">My Orders</a>
+            <a class="dropdown-item" href="#">Account Settings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+<div class="row ">
+  <div class="col-12 p-0">
+         <nav class="navbar navbar-expand-xl navbar-dark b25">
+
+  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="outline: none; border: none;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto  ">
+
+
+       <li class="nav-item dropdown text-center mx-0 mx-lg-3">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#depart">Shop by Department</a>
+          <a class="dropdown-item" href="#special">Special Offers</a>
+          <a class="dropdown-item" href="#newOffers">New</a>
+          <a class="dropdown-item" href="#weTogether">We're in this together</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown text-center mx-0 mx-lg-3">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Shipping</a>
+          <a class="dropdown-item" href="#">Term & Conditions</a>
+          <a class="dropdown-item" href="#">About Company</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown text-center mx-0 mx-lg-3">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Contact
+        </a>
+        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Contact Us</a>
+          <a class="dropdown-item" href="#">Live chat</a>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+  </div>
+</div>
+    </div>
+<!-- header -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content b1">
+      <div class="modal-header">
+        <h5 class="modal-title  text-warning" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close outlineNone" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-1/253988/12-512.png" width="25" height="25" loading="lazy"></span>
+        </button>
+      </div>
+      <div class="modal-body  b25 text-light">
+       <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <button type="submit" class="btn btn-outline-warning btn-block">Log in</button>
+      </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Modal Register -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content b1">
+      <div class="modal-header">
+        <h5 class="modal-title text-warning" id="staticBackdropLabel">Register</h5>
+        <button type="button" class="close outlineNone" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-1/253988/12-512.png" width="25" height="25" loading="lazy"></span>
+        </button>
+      </div>
+      <div class="modal-body b25 text-light">
+          <form>
+        <div class="form-group ">
+          <label for="exampleInputEmail3">Email address</label>
+          <input type="email" class="form-control " id="exampleInputEmail3" aria-describedby="emailHelp">
+
+        </div>
+         <div class="form-group">
+          <label for="exampleInputName1">Name</label>
+          <input type="text" class="form-control  " id="exampleInputName1" aria-describedby="nameHelp">
+
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword3">Password</label>
+          <input type="password" class="form-control " id="exampleInputPassword3">
+        </div>
+
+        <button type="submit" class="btn btn-outline-warning btn-block">Sign up</button>
+      </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- end header / login / register -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- content start-->
+<div class="container" id="depart">
+  <h3 class=" d-flex  justify-content-center  justify-content-sm-start mt-5 mb-3">Shop by Department</h3>
+  <div class="row  justify-content-center">
+   <div class="col-12 col-sm-4 col-lg">
+      <a href="living" class="a text-secondary nav-link ">
+       <div class="card border-0">
+          <img src="https://www.ashleyfurniture.com/on/demandware.static/-/Sites-site-catalog-ashley-us/default/dw9bd05fc1/department-icons/sofas-and-couches.png" class="card-img-top border  border-warning rounded-circle" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title text-center">Living room</h5>
+          </div>
+      </div>
+    </a>
+    </div>
+     <div class="col-12 col-sm-4 col-lg">
+      <a href="bedroom" class="a text-secondary nav-link ">
+       <div class="card border-0">
+          <img src="https://www.ashleyfurniture.com/on/demandware.static/-/Sites-site-catalog-ashley-us/default/dw3650eaf9/department-icons/bedroom.png" class="card-img-top border  border-warning rounded-circle" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title text-center">Bedroom</h5>
+          </div>
+      </div>
+    </a>
+    </div>
+     <div class="col-12 col-sm-4 col-lg">
+      <a href="mattres" class="a text-secondary nav-link ">
+       <div class="card border-0">
+          <img src="https://www.ashleyfurniture.com/on/demandware.static/-/Sites-site-catalog-ashley-us/default/dw67d2449f/department-icons/mattresses.png" class="card-img-top border  border-warning rounded-circle" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title text-center">Mattreses</h5>
+          </div>
+      </div>
+    </a>
+    </div>
+     <div class="col-12 col-sm-4 col-lg">
+      <a href="kitchen" class="a text-secondary nav-link ">
+       <div class="card border-0">
+          <img src="https://www.ashleyfurniture.com/on/demandware.static/-/Sites-site-catalog-ashley-us/default/dwf1ee0190/department-icons/kitchen-and-dining-room.png" class="card-img-top border  border-warning rounded-circle" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title text-center">Kitchen</h5>
+          </div>
+      </div>
+    </a>
+    </div>
+
+      <!-- new -->
+    <div class="d-none d-lg-block w-100"></div>
+    <!-- new -->
+     <div class="col-12 col-sm-4 col-lg">
+      <a href="outdoor" class="a text-secondary nav-link ">
+       <div class="card border-0">
+          <img src="https://www.ashleyfurniture.com/on/demandware.static/-/Sites-site-catalog-ashley-us/default/dw3b1518f3/department-icons/outdoor.png" class="card-img-top border  border-warning rounded-circle" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title text-center">Outdoor</h5>
+          </div>
+      </div>
+    </a>
+    </div>
+
+    <div class="col-12 col-sm-4 col-lg">
+      <a href="office" class="a text-secondary nav-link ">
+       <div class="card border-0">
+          <img src="https://www.ashleyfurniture.com/on/demandware.static/-/Sites-site-catalog-ashley-us/default/dwa6d18fc6/department-icons/home-office_2.png" class="card-img-top border  border-warning rounded-circle" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title text-center">Home office</h5>
+          </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-12 col-sm-4 col-lg">
+      <a href="decor" class="a text-secondary nav-link ">
+       <div class="card border-0">
+          <img src="https://www.ashleyfurniture.com/on/demandware.static/-/Sites-site-catalog-ashley-us/default/dw8fa96fd4/department-icons/home-decor.png" class="card-img-top border  border-warning rounded-circle" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title text-center">Home decor</h5>
+          </div>
+      </div>
+    </a>
+    </div>
+
+    <div class="col-12 col-sm-4 col-lg">
+      <a href="light" class="a text-secondary nav-link ">
+       <div class="card border-0">
+          <img src="https://www.ashleyfurniture.com/on/demandware.static/-/Sites-site-catalog-ashley-us/default/dweaca49a7/department-icons/lighting-top.png" class="card-img-top border  border-warning rounded-circle" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title text-center">Lighting</h5>
+          </div>
+      </div>
+    </a>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- content part 1 about start -->
+<div class="container" id="weTogether">
+      <h3 class=" d-flex  justify-content-center  justify-content-sm-start mt-5">We are in this together</h3>
+      <div class="row">
+         <div class="col-12 col-sm-6 col-lg-3">
+
+               <div class="card border-0">
+                  <img src="https://www.ashleyfurniture.com/on/demandware.static/-/Library-Sites-AshcommSharedLibrary/default/dw7febee45/images/homepage/footer/20200512/MDS_N1b_Footer_DK.jpg" class="card-img-top border-0" alt="..." >
+                  <div class="card-body">
+                  </div>
+              </div>
+
+         </div>
+         <div class="col-12 col-sm-6 col-lg-3">
+           <a href="#" class=" text-secondary nav-link ">
+               <div class="card border-0">
+                  <img src="https://www.ashleyfurniture.com/on/demandware.static/-/Library-Sites-AshcommSharedLibrary/default/dwa6370a3f/images/homepage/footer/20200512/MDS_N1c_Footer_DK.jpg" class="card-img-top border-0" alt="..." >
+                  <div class="card-body">
+                  </div>
+              </div>
+            </a>
+         </div>
+         <div class="col-12 col-sm-6 col-lg-3">
+           <a href="#" class=" text-secondary nav-link ">
+               <div class="card border-0">
+                  <img src="https://www.ashleyfurniture.com/on/demandware.static/-/Library-Sites-AshcommSharedLibrary/default/dw6f39ef25/images/homepage/footer/20200512/MDS_N1a_Footer_DK.jpg" class="card-img-top border-0" alt="..." >
+                  <div class="card-body">
+                  </div>
+              </div>
+            </a>
+         </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+           <a href="#" class=" text-secondary nav-link ">
+               <div class="card border-0">
+                  <img src="https://www.ashleyfurniture.com/on/demandware.static/-/Library-Sites-AshcommSharedLibrary/default/dw2ce0442b/images/homepage/footer/20200512/MDS_N1d_Footer_DK.jpg" class="card-img-top border-0" alt="..." >
+                  <div class="card-body">
+                  </div>
+              </div>
+            </a>
+         </div>
+      </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer start -->
+<div class="container-fluid">
+    <div class="row text-center b25 text-light text-uppercase pt-1">
+      <div class="col-12 col-md">
+        <a href="" class="nav-link  text-light h5">contact us</a>
+      </div>
+      <div class="col-12 col-md">
+        <a href="" class="nav-link  text-light h5">Live chat</a>
+      </div>
+       <div class="col-12 col-md ">
+          <a href="" class="nav-link text-light h5">shipping</a>
+      </div>
+       <div class="col-12 col-md ">
+          <a href="" class="nav-link text-light h5">term & conditions</a>
+      </div>
+
+    </div>
+
+    <div class="row b25 text-center">
+
+
+    <div class="row b25 text-light">
+      <div class="col-12 text-center pt-3 pb-1">
+        <a href="#"> <img  class=" mr-2 ml-2" src="https://seeklogo.com/images/F/facebook-icon-circle-logo-09F32F61FF-seeklogo.com.png" loading="lazy" width="30" height="30"></a>
+       <a href="#"><img  class=" mr-2 ml-2" src="https://i1.wp.com/www.fashionrevolution.org/wp-content/uploads/2019/07/kisspng-social-media-marketing-youtube-instagram-photograp-instagram-logo-icon-png-5b875849ea5482.8768584615355966179598.png?fit=512%2C512&ssl=1" loading="lazy" width="30" height="30"></a>
+        <a href="#"><img  class=" mr-2 ml-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/YouTube_social_white_circle_%282017%29.svg/1200px-YouTube_social_white_circle_%282017%29.svg.png"  loading="lazy" width="30" height="30"></a>
+        <a href="#"><img class=" mr-2 ml-2" src="https://3.bp.blogspot.com/-NxouMmz2bOY/T8_ac97cesI/AAAAAAAAGg0/e3vY1_bdnbE/s1600/Twitter+logo+2012.png" loading="lazy" width="30" height="30"></a>
+
+      </div>
+      <div class="col-12 text-center pt-1 pb-3">
+        &copy; Vidhu Prasad V P
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+<!-- scroll go top start -->
+<a id="myBtn" class="gotopbtn" href="#body-start"><img src="https://cdn3.iconfinder.com/data/icons/road-sign/154/road-sign-top-arrow-yellow-attention-512.png" width="50" height="50" loading="lazy"></a>
+<!-- scroll end -->
+ <!-- by Ruben Vardanyan -->
+<!-- loading start -->
+<div class="loader-wrapper"  >
+  <div class="loader-inner">
+     <div class="st1"></div>
+     <div class="st2"></div>
+     <div class="st3"></div>
+  </div>
+</div>
+<!-- loading end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(window).on("load",function(){
+     $(".loader-wrapper").fadeOut("slow");
+});
+      //  by Ruben Vardanyan
+      //scroll Top
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+       mybutton.style.display = "none";
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

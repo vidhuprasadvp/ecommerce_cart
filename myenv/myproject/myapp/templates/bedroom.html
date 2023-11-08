@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bedroom</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  background: #e6e5e3;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  margin: 50px auto;
+}
+.main{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.box{
+  margin-top: 10px;
+  padding: 20px;
+  box-shadow: 1px 1px 2px #8f8f8f;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  transition: transform .3s;
+}
+.box:hover{
+  transform: scale(1.06);
+  z-index:12;
+}
+img{
+  height: 250px;
+  object-fit: cover;
+}
+.demo-type{
+  text-transform: uppercase;
+  color: #8f8f8f;
+  font-size: 0.8rem;
+}
+.demo-title{
+  font-weight: normal;
+
+}
+.price-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color{
+  display: inline-block;
+  content: "";
+  height: 10px;
+  background-color: #000;
+  width: 10px;
+  border-radius: 60%;
+}
+.real-price{
+  margin-right: 5px;
+  text-decoration: line-through;
+  color: #8f8f8f;
+}
+.discounted-price{
+  font-weight: 500;
+}
+.size-wrapper{
+  display: flex;
+
+}
+.size{
+  border: 2px solid #8f8f8f;
+  padding: 0 2px;
+}
+
+@media (max-width:865px) {
+  .main{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+@media (max-width:490px) {
+  .main{
+    display: block;
+  }
+
+}
+    </style>
+</head>
+<body>
+<center><h1 style="color:red;font-size:50px;font-family: Copperplate;">Bed Room</h1></center>
+<br><br><br>
+
+  <div class="main">
+    <div class="box">
+      <img src="https://media.designcafe.com/wp-content/uploads/2021/04/28110847/middle-class-indian-bedroom-design.jpg" alt="">
+      <p class="demo-type">Brown bedroom set</p>
+      <h4 class="demo-title">1 brown bedset,2 brown table</h4>
+      <div class="price-info">
+      <span class="color"></span>
+        <div>
+      <span class="real-price">₹45,000</span>
+      <span class="discounted-price">₹43,000</span>
+          </div>
+      </div>
+      <div class="size-wrapper">
+      <p class="size">instock</p>
+            </div>
+    </div>
+
+
+        <div class="box">
+      <img src="https://i.pinimg.com/736x/57/11/c4/5711c44186e0ddbfcde728fe80ea3563.jpg" alt="">
+      <p class="demo-type">WHITE bedroom set</p>
+      <h4 class="demo-title">1 white bedset,2 white table</h4>
+      <div class="price-info">
+      <span class="color"></span>
+        <div>
+      <span class="real-price">₹46,000</span>
+      <span class="discounted-price">₹44,000</span>
+          </div>
+      </div>
+     <div class="size-wrapper">
+      <p class="size">instock</p>
+            </div>
+    </div>
+
+        <div class="box">
+      <img src="https://www.furdo.com/wp-content/uploads/2021/04/Bedroom-ideas-8.jpg" alt="">
+      <p class="demo-type">Black bedroom set</p>
+      <h4 class="demo-title">1 black bedset,2 black table</h4>
+      <div class="price-info">
+      <span class="color"></span>
+        <div>
+      <span class="real-price">₹43,000</span>
+      <span class="discounted-price">₹41,000</span>
+          </div>
+      </div>
+     <div class="size-wrapper">
+      <p class="size">instock</p>
+            </div>
+    </div>
+
+  </div>
+</body>
+</html>
